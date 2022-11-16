@@ -1,0 +1,157 @@
+.middle-bg {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.headerr {
+    align-items: center;
+    display: flex;
+    height: 85px;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100vw;
+}
+
+.left-header, .middle-header, .right-header {
+    display: flex;
+    order: 1;
+    position: relative;
+}
+
+.white-tear {
+    cursor: pointer;
+    object-fit: cover;
+    object-position: 0% 100%;
+    left: 50px;
+    height: 50px;
+    width: 95px;
+    position: absolute;
+    top: 50px;
+}
+
+.black-tear {
+    cursor: pointer;
+    object-fit: cover;
+    object-position: 100% 0%;
+    left: 52px;
+    height: 42px;
+    width: 92px;
+    position: absolute;
+}
+
+.left-header-txt:hover {
+    opacity: 0.7;
+}
+
+.left-header-txt {
+    cursor: pointer;
+    margin-left: 151px;
+}
+
+.drip {
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.decaf {
+    color: rgb(177, 177, 177);
+    font-size: 16px;
+}
+
+.middle-header {
+    margin-top: 25px;
+}
+
+.deposit,
+.positions {
+    border-radius: 2px;
+    cursor: pointer;
+    color:rgb(179, 175, 187);
+    font-size: 28px;
+    padding-bottom: 20px;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    width: 150px;
+}
+
+.deposit:after {
+    background: rgb(170, 11, 59);
+    content: "";
+    height: 3px;
+    left: 77px;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    transition: all 0.6s ease-in-out;
+    width: 0;
+}
+
+.positions:after {
+    background: rgb(170, 11, 59);
+    content: "";
+    height: 3px;
+    left: 252px;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    transition: all 0.6s ease-in-out;
+    width: 0;
+}
+
+.positions:hover:after,
+.deposit:hover:after {
+    opacity: 1;
+    width: 162px;
+}
+
+.positions:hover,
+.deposit:hover {
+    font-size: 34px;
+}
+
+.positions:hover:after {
+    left: 168px;
+
+}
+
+.deposit:hover:after {
+    left: -4px;
+}
+
+.deposit {
+    margin-right: 24px;
+}
+
+.right-header {
+    align-items: center;
+    border-radius: 60px;
+    border: solid 1px white;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 51px;
+    opacity: 0.9;
+    padding: 10px 35px;
+    transition: all 0.3s ease-out;
+}
+
+.ghost-icon {
+    background-color: white;
+    border-radius: 30%;
+    height: 35px;
+    margin-right: 15px;
+    padding: 6px;
+}
+
+.nickname {
+    font-size: 22px;
+}
+
+.right-header:hover {
+    box-shadow: 0px 4px 8px 0px rgba(255, 255, 255, 0.533);
+    opacity: 0.7;
+}
+
